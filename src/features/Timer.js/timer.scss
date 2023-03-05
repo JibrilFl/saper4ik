@@ -1,0 +1,18 @@
+.timer {
+	padding: 4px 7px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 275px;
+	margin: 0 auto;
+	background-color: #c0c0c0;
+	border-left: 3px solid #7b7b7b;
+	border-top: 3px solid #7b7b7b;
+	border-right: 2px solid #fff;
+	border-bottom: 2px solid #fff;
+
+	&__minute,
+	&__seconds {
+		display: flex;
+	}
+}

@@ -1,9 +1,12 @@
-import Game from '../features/game/Game';
+import Game from '../features/Game/Game';
+import Timer from '../features/Timer.js/Timer';
+
 import './app.scss';
 
 function App() {
 	return (
 		<div className="App">
+			<Timer />
 			<Game />
 		</div>
 	);
