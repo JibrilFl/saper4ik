@@ -1,9 +1,8 @@
 import React from 'react';
 import { createRoot } from 'react-dom/client';
 import { Provider } from 'react-redux';
-import { store } from './app/store';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import {store} from './store';
+import App from './app/App';
 import './index.css';
 
 const container = document.getElementById('root');
@@ -17,7 +16,15 @@ root.render(
   </React.StrictMode>
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+// Что нужно:
+// 1) поле 16x16 клеток, 40 мин {Ok}
+// 2) слева счетчик мин от 40 до нуля, справа секундомер {Ok}
+// 3) мины расставляются случайно {Ok}
+// 4) первый клик никогда не должен быть по мине
+// 5) если рядом с открытым полем есть другие поля без мин поблизости, они открываются автоматически {Ok}
+// 6) правая клавиша ставит флажок - так отмечается место, где предполагается мина {Ok}
+// 7) если кликнуть правой кнопкой по флажку, ставится вопрос, еще раз - выделение снимается {Ok}
+// 8) клик по смайлику перезапускает игру {Ok}
+// 9) испуганный смайлик - пользователь нажал на поле, но еще не отпустил кнопку мышки {Ok}
+// 10) после проигрыша смайлик заменяется на грустный, пользователю раскрывается карта мин {Ok}
+// 11) после того, как пользователь открыл все поля кроме мин, смайлик надевает солнечные очки, секундомер останавливается {Ok}

@@ -1,0 +1,32 @@
+.grid {
+	width: 276px;
+	height: 260px;
+	margin: 5px auto;
+	display: grid;
+	align-content: center;
+	justify-content: center;
+	grid-template-columns: repeat(16, 17px);
+	grid-template-rows: repeat(16, 16px);
+	border-left: 3px solid #7b7b7b;
+	border-top: 3px solid #7b7b7b;
+	border-right: 2px solid #fff;
+	border-bottom: 2px solid #fff;
+}
+
+.time {
+	display: flex;
+}
+
+.timer {
+	padding: 4px 7px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 275px;
+	margin: 0 auto;
+	background-color: #c0c0c0;
+	border-left: 3px solid #7b7b7b;
+	border-top: 3px solid #7b7b7b;
+	border-right: 2px solid #fff;
+	border-bottom: 2px solid #fff;
+}
